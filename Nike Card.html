@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Card</title>
+    <link rel="stylesheet" href="./Nike Card_files/style.css">
+    <link rel="stylesheet" href="./Nike Card_files/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Nike Card_files/css2" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container change">
+      <div class="card-wrapper">
+        <div class="card">
+          <div class="card-top">
+            <img src="./Nike Card_files/nike.png" class="logo">
+            <div class="card-top-text">
+              <h1>Air Structure</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                quasi ratione praesentium eum commodi modi neque dignissimos
+                eligendi illo officiis!
+              </p>
+            </div>
+            <img src="./Nike Card_files/shoe1.png" class="shoe-1">
+            <img src="./Nike Card_files/shoe2.png" class="shoe-2">
+          </div>
+          <div class="card-bottom">
+            <h1>Air Structure</h1>
+            <div class="badge">New</div>
+            <h3>Running Collections</h3>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="size">
+              <h4>Size</h4>
+              <div class="sizes">
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+                <span>10</span>
+                <span>11</span>
+              </div>
+            </div>
+            <div class="color">
+              <h4>Color</h4>
+              <div class="colors">
+                <div class="color-1"></div>
+                <div class="color-2"></div>
+              </div>
+            </div>
+            <div class="price">
+              <span>Usd</span>
+              <span>350,00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./Nike Card_files/script.js.download"></script>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
